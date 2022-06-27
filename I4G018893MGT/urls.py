@@ -22,7 +22,4 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("blog/", include("blog.urls", namespace="blog")),
-    path("", views.home, name="home"),
-    path('', PostCreateView.as_view(), name='home'),
-    path('blog/', include('blog.urls')),
 ]
